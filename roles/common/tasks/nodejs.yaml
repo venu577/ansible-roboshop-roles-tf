@@ -1,0 +1,15 @@
+  - name: disable default nodejs
+    ansible.builtin.command: dnf module disable nodejs -y
+    
+  - name: enable default nodejs:20
+    ansible.builtin.command: dnf module enable nodejs:20 -y 
+    #here there is no special ansible module for enabling nodejs, so we use command module
+
+  - name: install nodejs
+    ansible.builtin.dnf:
+      name: nodejs
+      state: present  
+
+  # - name: install dependencies
+  #   community.general.npm:
+  #    path: /app    

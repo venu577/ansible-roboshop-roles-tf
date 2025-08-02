@@ -1,0 +1,23 @@
+- name: install mysql server
+  ansible.builtin.dnf:
+    name: mysql-server 
+    state: installed
+
+- name: start mysql server 
+  ansible.builtin.service:
+    name: mysqld
+    state: started
+    enabled: yes
+
+- name: 3.install boto3 and botocore packages
+  ansible.builtin.pip:
+    name: "{{ item }}"
+    executable: pip3.9
+  loop:
+  - boto3
+  - botocore
+  # but these libraries will installed in mysql server we need these libraries in ansible server     
+
+- name: setup root password
+  ansible.builtin.command: mysql_secure_installation --set-root-pass {{ MYSQL_ROOT_PASSWORD }}  
+

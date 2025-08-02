@@ -1,0 +1,5 @@
+CATALOGUE_HOST: catalogue.newgenrobots.site 
+USER_HOST: user.newgenrobots.site
+CART_HOST: cart.newgenrobots.site
+SHIPPING_HOST: shipping.newgenrobots.site
+PAYMENT_HOST: payment.newgenrobots.site

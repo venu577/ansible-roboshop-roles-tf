@@ -1,0 +1,3 @@
+CART_HOST: cart.newgenrobots.site
+USER_HOST: user.newgenrobots.site
+RABBITMQ_HOST: rabbitmq.newgenrobots.site    
