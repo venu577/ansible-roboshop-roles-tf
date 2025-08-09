@@ -1,5 +1,5 @@
-CATALOGUE_HOST: catalogue.newgenrobots.site 
-USER_HOST: user.newgenrobots.site
-CART_HOST: cart.newgenrobots.site
-SHIPPING_HOST: shipping.newgenrobots.site
-PAYMENT_HOST: payment.newgenrobots.site
+CATALOGUE_HOST: catalogue.backend-{{ env }}.newgenrobots.site
+USER_HOST: user.backend-{{ env }}.newgenrobots.site
+CART_HOST: cart.backend-{{ env }}.newgenrobots.site
+SHIPPING_HOST: shipping.backend-{{ env }}.newgenrobots.site
+PAYMENT_HOST: payment.backend-{{ env }}.newgenrobots.site

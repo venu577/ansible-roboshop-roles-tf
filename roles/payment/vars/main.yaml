@@ -1,3 +1,5 @@
-CART_HOST: cart.newgenrobots.site
-USER_HOST: user.newgenrobots.site
-RABBITMQ_HOST: rabbitmq.newgenrobots.site    
+CART_HOST: cart.backend-{{ env }}.newgenrobots.site
+USER_HOST: user.backend-{{ env }}.newgenrobots.site
+RABBITMQ_HOST: rabbitmq-{{ env }}.newgenrobots.site
+RABBITMQ_USER: roboshop
+RABBITMQ_PASSWORD: roboshop123

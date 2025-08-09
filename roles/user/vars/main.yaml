@@ -1,2 +1,2 @@
-REDIS_HOST: redis.newgenrobots.site
-MONGODB_HOST: mongodb.newgenrobots.site
+REDIS_HOST: redis-{{ env }}.newgenrobots.site
+MONGODB_HOST: mongodb-{{ env }}.newgenrobots.site

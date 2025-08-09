@@ -1,2 +1,2 @@
-REDIS_HOST: redis.newgenrobots.site
-CATALOGUE_HOST: catalogue.newgenrobots.site 
+REDIS_HOST: redis-{{ env }}.newgenrobots.site
+CATALOGUE_HOST: catalogue.backend-{{ env }}.newgenrobots.site 
